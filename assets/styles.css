@@ -720,3 +720,6 @@ footer{border-top:1px solid rgba(159,176,201,.18)}
   .nav .nav-links{gap:clamp(.5rem,1.2vw,1rem);padding-right:13.5rem}
   .nav .nav-links a:not(.btn-accent){font-size:.74rem;letter-spacing:.06em}
 }
+
+/* feedback: logo - świetlna poświata, by JB odcinało się od granatu */
+.brand-lockup .brand-logo{filter:drop-shadow(0 0 5px rgba(175,198,235,.65)) drop-shadow(0 0 1px rgba(255,255,255,.5)) !important}
