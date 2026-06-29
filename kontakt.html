@@ -64,7 +64,7 @@
       <div class="info-list">
         <div class="info-row"><div class="ic"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></div><div><div class="lbl">Telefon</div><a class="val" href="tel:+48739241228">+48 739 241 228</a></div></div>
         <div class="info-row"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div><div><div class="lbl">Obszar działania</div><div class="val">Legionowo i okolice<br><span style="font-weight:500;color:var(--muted)">Nowy Dwór Maz., Jabłonna, Nieporęt, Wieliszew, Serock</span></div></div></div>
-        <div class="info-row"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="lbl">Godziny</div><div class="val" style="font-weight:500">Zapraszamy - zadzwoń po szczegóły</div></div></div>
+        <div class="info-row"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="lbl">Dostępność</div><div class="val" style="font-weight:500">Awarie 24/7 - dzwoń o każdej porze</div></div></div>
       </div>
     </div>
     <div class="reveal">
@@ -72,13 +72,13 @@
         <h3 style="margin-bottom:var(--space-3)">Wolisz, żebyśmy oddzwonili?</h3>
         <p class="muted" style="margin-bottom:var(--space-5)">Zostaw numer i krótki opis - odezwiemy się z wyceną. Bez zobowiązań. Najszybciej i tak telefonicznie:</p>
         <a href="tel:+48739241228" class="btn btn-accent" style="justify-content:center;margin-bottom:var(--space-6)">Zadzwoń: +48 739 241 228 <span class="arr" aria-hidden="true">→</span></a>
-        <!-- FORMULARZ: po danych od Jakuba wstawić WEB3FORMS_ACCESS_KEY (klucz powiązany z jego mailem) -->
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_DO_UZUPELNIENIA">
-          <input type="hidden" name="subject" value="Nowe zapytanie ze strony - Hydraulika JB Grupa">
-          <input type="hidden" name="from_name" value="Strona Hydraulika JB Grupa">
-          <input type="hidden" name="redirect" value="https://hydraulika-legionowo.pl/dziekujemy.html">
-          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <!-- FORMULARZ: FormSubmit (bez konta). Maile lecą na kontakt@jbgrupa.com. UWAGA: przy 1. wysyłce FormSubmit wysyła na ten mail link aktywacyjny - trzeba kliknąć RAZ, potem działa na stałe. -->
+        <form action="https://formsubmit.co/kontakt@jbgrupa.com" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="Nowe zapytanie ze strony - Hydraulika JB Grupa">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://hydraulika-legionowo.pl/dziekujemy.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="field"><label for="f-imie">Imię</label><input id="f-imie" type="text" name="imie" required autocomplete="name"></div>
           <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" type="tel" name="telefon" required autocomplete="tel" inputmode="tel"></div>
           <div class="field"><label for="f-mail">E-mail (opcjonalnie)</label><input id="f-mail" type="email" name="email" autocomplete="email"></div>
